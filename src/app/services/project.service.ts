@@ -20,20 +20,29 @@ export class ProjectService{
 	testService(){
 		return 'Probando el servicio de Angular';
 	}
+
 	saveProject(project: Project): Observable <any>{
 		let params = JSON.stringify(project);
 		let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
 		return this._http.post(this.url+'save-project', params, {headers:headers});
 	}
+
 	getProjects():Observable<any>{
 		let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
 		return this._http.get(this.url+'projects', {headers: headers});
 	}
+
 	getProject(id:any): Observable<any>{
 		let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
 		return this._http.get(this.url+'project/'+id, {headers: headers});
+	}
+
+	deleteProject(id: any): Observable<any>{
+		let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+		return this._http.delete(this.url+'project/'+id, {headers: headers});
 	}
 }
