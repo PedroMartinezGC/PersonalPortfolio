@@ -145,7 +145,7 @@ footer{
 	text-align: center;
 }
 
-/* Sobre mi */
+/* About me */
 
 #title{
 	width: 70%;
@@ -188,13 +188,19 @@ article.about{
 	display: block;
 	background: blue;
 }
+.logo-about{
+	width: 60px;
+}
 
-/* Sección con formulario */
+/* Form section */
 
 .container{
 	width: 90%;
 	padding: 50px;
 	padding-top: 10px;
+}
+.container form{
+	width: 70%;
 }
 .container h2{
 	display: block;
@@ -250,15 +256,16 @@ form input[type = "submit"],
 	text-decoration: none;
 	width: 15%;
 	color: white;
+	display: block;
+	margin: 20px;
 }
 .button-delete{
 	text-decoration: none;
 	width: 15%;
 	background: brown;
 	color: white;
-}
-form input[type = "file"]{
-	color: #ccc;
+	display: block;
+	margin: 20px;
 }
 form input[disabled]{
 	opacity: 0.3;
@@ -292,7 +299,7 @@ form input[type = "submit"]:hover{
 	color: white;
 }
 
-/*Página de proyectos*/
+/*Projects page*/
 
 .project{
 	margin: 50px;
@@ -303,4 +310,12 @@ form input[type = "submit"]:hover{
 .project a{
 	text-decoration: none;
 	color: inherit;
+}
+
+/*Detail project*/
+
+.confirm{
+	font-size: 14px;
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
 }

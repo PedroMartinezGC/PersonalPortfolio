@@ -1,6 +1,6 @@
 
 
-<div class = "container">
+<div class = "container" *ngIf="project">
 	<h2>{{title}}</h2>
 
 	<div class = "message success"  *ngIf = "status == 'success'">
@@ -44,7 +44,9 @@
 			<span class = "form_error" *ngIf="langs.touched && !langs.valid">The language used is required</span>
 		</p>
 		<p>
-			<label for = "image>">Project's image</label>
+			<label for = "image">Project's image</label>
+			<span *ngIf = "project.image"><img src = "{{url+'get-image/'+project.image}}"
+			width = "100"/></span>
 			<input type = "file" name = "image" placeholder = "Upload image" 
 			(change) = "fileChangeEvent($event)"/>
 		</p>
