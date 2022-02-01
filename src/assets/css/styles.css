@@ -202,10 +202,9 @@ article.about{
 	padding-bottom: 10px;
 	margin-bottom: 15px;
 }
-/*.container{
-	float: left;
-	width: 60%;
-}*/
+.container a{
+	font-size: 18px;
+}
 .container .image img{
 	width: 50%;
 	float: left;

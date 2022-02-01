@@ -26,7 +26,7 @@ export class CreateComponent implements OnInit {
 		private _route: ActivatedRoute,
 		private _router: Router
 	) {
-		this.title = "Crear Proyecto";
+		this.title = "Create Project";
 		this.project = new Project('', '', '', '', 2022, '', '');
 		this.url = Global.url;
 	}
