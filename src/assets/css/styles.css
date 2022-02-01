@@ -172,7 +172,7 @@ article.about{
 	padding-bottom: 25px;
 }
 #about-left{
-	width: 50%;
+	width: 80%;
 	height: 100%;
 	float: left;
 	display: block;
@@ -181,15 +181,9 @@ article.about{
 #about-left ul li{
 	list-style: none;
 }
-#about-right{
-	width: 50%;
-	height: 100%;
-	float: right;
-	display: block;
-	background: blue;
-}
 .logo-about{
 	width: 60px;
+	margin-left: 200px;
 }
 
 /* Form section */
